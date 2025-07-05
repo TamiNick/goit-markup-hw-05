@@ -701,7 +701,7 @@ padding: 8px 212px 8px 16px;
     border-radius:4px;
     display: flex;
     flex-direction: column;
-    padding:  24px 24px 24px;
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -873,11 +873,11 @@ padding-left: 16px;
     border-color: #4d5ae5;
     outline: none;
 }
-.pop-up-field:focus-visible .user-icon,
-.pop-up-field:focus-visible .phone-icon,
-.pop-up-field:focus-visible .email-icon,
-.pop-up-field:focus-visible .textarea-text,
-.pop-up-field:focus-visible .input-text {
+.pop-up-field:focus .user-icon,
+.pop-up-field:focus .phone-icon,
+.pop-up-field:focus .email-icon,
+.pop-up-field:focus .textarea-text,
+.pop-up-field:focus .input-text {
     fill: #4d5ae5;
     border-color: #4d5ae5;
     outline: none;
