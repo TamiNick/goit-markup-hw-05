@@ -832,24 +832,12 @@ display: block;
 
 }
 
-.user-icon {
+.form-icons {
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone-icon {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
-.email-icon {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
 }
 
 .pop-up-textarea {
@@ -885,18 +873,14 @@ padding-top: 8px;
 padding-left: 16px;
 }
 
-.pop-up-field:hover .user-icon,
-.pop-up-field:hover .phone-icon,
-.pop-up-field:hover .email-icon,
+.pop-up-field:hover .form-icons,
 .pop-up-field:hover .textarea-text,
 .pop-up-field:hover .input-text {
     fill: #4d5ae5;
     border-color: #4D5AE5;
     outline: none;
 }
-.pop-up-field:focus .user-icon,
-.pop-up-field:focus .phone-icon,
-.pop-up-field:focus .email-icon,
+.pop-up-field:focus .form-icons,
 .pop-up-field:focus .textarea-text,
 .pop-up-field:focus .input-text {
     fill: #4d5ae5;
