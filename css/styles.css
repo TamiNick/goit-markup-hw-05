@@ -738,7 +738,24 @@ padding: 8px 212px 8px 16px;
 
 }  
 
-.reset-btn:hover {
+.reset-btn:hover .close-icon {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+
+}
+
+.reset-btn:focus .close-icon {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reset-btn:hover  {
     background-color: #404bbf;
     border: none;
 
@@ -747,17 +764,6 @@ padding: 8px 212px 8px 16px;
 .reset-btn:focus {
     background-color: #404bbf;
     border: none;
-}
-
-.close-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-icon:hover {
-    fill: #ffffff;
-}
-
-.close-icon:focus {
-    fill: #ffffff;
 }
 
 
