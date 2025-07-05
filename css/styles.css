@@ -891,7 +891,7 @@ padding-left: 16px;
 .pop-up-field:hover .textarea-text,
 .pop-up-field:hover .input-text {
     fill: #4d5ae5;
-    border-color: #4d5ae5;
+    border-color: #4D5AE5;
     outline: none;
 }
 .pop-up-field:focus .user-icon,
@@ -900,12 +900,12 @@ padding-left: 16px;
 .pop-up-field:focus .textarea-text,
 .pop-up-field:focus .input-text {
     fill: #4d5ae5;
-    border-color: #4d5ae5;
+    border-color: #4D5AE5;
     outline: none;
 }
 
 
-.form-checkbox:checked .custom-checkbox {
+.form-checkbox:checked ~ .custom-checkbox {
     background-color: #404bbf;
     border: none; 
     fill: #F4F4FD;
