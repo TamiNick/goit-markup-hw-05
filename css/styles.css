@@ -637,6 +637,9 @@ width: 165px;
 height: 40px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
  .form-button-footer:hover {
@@ -646,7 +649,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404BBF;
 }
 .footer-form-icon {
-
+    margin-left: 16px;
 }
 
 .email-send::placeholder{
@@ -664,9 +667,175 @@ padding: 8px 212px 8px 16px;
 
 
 /* footer end */    
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-up {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    width: 408px;
+    border-radius:4px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: relative;
+}
+.pop-up-text {
+   font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
 
+.reset-btn {
+    display: flex;
+    align-self: flex-end;
+    border-radius: 100%;
+    border: none;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
 
-/* .form-button-footer {
+}
+
+.pop-up-field {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+.pop-up-field:last-of-type {
+    margin-bottom: 24px;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.privacy-text {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+.label-text {
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+color: #8e8f99;
+margin-bottom: 4px;
+margin-top: 8px;
+}
+
+.input-text {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+
+    height: 100%;
+    box-sizing: border-box;
+    padding: 8px 14px 8px 37px;
+
+}
+
+.user-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 16px;
+}
+
+.phone-icon {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.email-icon {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.textarea-text {
+    resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 360px;
+
+}
+
+.textarea-text::placeholder {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+color: rgba(46, 47, 66, 0.4);
+padding-top: 8px;
+padding-left: 16px;
+}
+
+.pop-up-field:hover .user-icon,
+.pop-up-field:hover .phone-icon,
+.pop-up-field:hover .email-icon,
+.pop-up-field:hover .textarea-text,
+.pop-up-field:hover .input-text {
+    fill: #4d5ae5;
+    border-color: #4d5ae5;
+    outline: none;
+}
+.pop-up-field:focus-visible .user-icon,
+.pop-up-field:focus-visible .phone-icon,
+.pop-up-field:focus-visible .email-icon,
+.pop-up-field:focus-visible .textarea-text,
+.pop-up-field:focus-visible .input-text {
+    fill: #4d5ae5;
+    border-color: #4d5ae5;
+    outline: none;
+}
+
+.privacy-checkbox {
+    margin-top: 16px;
+}
+
+.privacy-link {
+    line-height: 133%;
+    text-decoration: underline;
+    color: #4d5ae5;
+    text-decoration-skip-ink: none;
+}
+
+.send-btn {
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+border: none;
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -674,20 +843,36 @@ line-height: 150%;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
-border-radius: 4px;
-padding: 8px 24px;
-width: 165px;
-height: 40px;
-gap: 24px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-background-color:#4d5ae5;
-border: none;
-border-radius: 4px;
+margin-left: 90px;
+cursor: pointer;
 }
- .form-button-footer:hover {
-    background-color: #404BBF;
-}
-.form-button-footer:focus {
-    background-color: #404BBF;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

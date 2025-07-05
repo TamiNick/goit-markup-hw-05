@@ -497,6 +497,51 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div>
+        <form class="pop-up">
+          <button class="reset-btn">x</button>
+          <p class="pop-up-text">Leave your contacts and we will call you back</p>
+
+          <fieldset class="pop-up-field">
+            <label class="label-text" for="name-send">Name</label>
+            <input class="input-text" type="text" id="name-send" name="name">
+            <svg class="user-icon form-animations" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </fieldset>
+
+          <fieldset class="pop-up-field">
+            <label class="label-text" for="phone-send">Phone</label>
+            <input class="input-text" type="tel" id="phone-send" name="phone">
+            <svg class="phone-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </fieldset>
+
+         <fieldset class="pop-up-field">
+            <label class="label-text" for="email-send">Email</label>
+            <input class="input-text" type="email" id="emal-send" name="email">
+            <svg class="email-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+         </fieldset>
+
+         <fieldset  class="pop-up-field">
+          <label class="label-text" for="comment-send">Comment</label>
+          <textarea class="textarea-text" name="comment" id="comment-send" rows="6" placeholder="Text input"></textarea>
+         </fieldset>
+
+         <fieldset class="pop-up-field privacy-checkbox">
+          <input type="checkbox" name="privacy" id="privacy-agry">
+          <label for="privacy" class="privacy-text">I accept the terms and conditions of the <span class="privacy-text-link"><a class="privacy-link" href="https://www.youtube.com/shorts/Ikt72HH8Ics">Privacy Policy</a></span></label>
+         </fieldset>
+
+         <button type="submit" class="send-btn">Send</button>
+
+        </form>
+      </div>
+    </div>
   </body>
 </html>
 
