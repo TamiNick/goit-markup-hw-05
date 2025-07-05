@@ -697,11 +697,16 @@ padding: 8px 212px 8px 16px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     width: 408px;
+    min-height: 584px;
     border-radius:4px;
     display: flex;
     flex-direction: column;
     padding: 24px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .pop-up-text {
    font-family: "Roboto", sans-serif;
