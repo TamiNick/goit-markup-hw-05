@@ -678,6 +678,11 @@ padding: 8px 212px 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+}
+
+.is-open {
+    opacity: 1;
 }
 .pop-up {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
