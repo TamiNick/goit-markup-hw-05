@@ -865,6 +865,10 @@ textarea {
 
 }
 
+.textarea-text:focus {
+   border-color: #4D5AE5;
+}
+
 .textarea-text::placeholder {
 font-family: "Roboto", sans-serif;
 font-weight: 400;
