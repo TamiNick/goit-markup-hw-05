@@ -891,7 +891,7 @@ padding-left: 16px;
     outline: none;
 }
 
-.input-text:hover {
+.input-text:focus .form-icons {
      fill: #4d5ae5;
     border-color: #4D5AE5;
     outline: none;
