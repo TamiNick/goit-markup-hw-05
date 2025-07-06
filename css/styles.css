@@ -892,7 +892,7 @@ padding-left: 16px;
 }
 
 
-.form-checkbox:checked ~ .custom-checkbox {
+.form-checkbox:checked + .privacy-text .custom-checkbox {
     background-color: #404bbf;
     border: none; 
     fill: #F4F4FD;
@@ -912,6 +912,7 @@ padding-left: 16px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .privacy-link {
@@ -919,6 +920,11 @@ padding-left: 16px;
     text-decoration: underline;
     color: #4d5ae5;
     text-decoration-skip-ink: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
 }
 
 .send-btn {
